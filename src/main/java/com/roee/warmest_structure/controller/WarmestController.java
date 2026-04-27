@@ -17,7 +17,7 @@ public class WarmestController {
     public String test() {
         return "The app is alive!";
     }
-    @GetMapping("/put")
+    @PutMapping("/put")
     public Integer put(@RequestParam String key, @RequestParam int value) {
         return ds.put(key, value);
     }
